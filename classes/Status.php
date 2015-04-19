@@ -8,12 +8,11 @@ namespace classes;
  */
 
 class Status {
-
-    public static function ok($msg){
-            return ['status'=>'ok', 'msg'=>$msg];
+    public static function ok($type, $msg){
+            return ['type'=>$type,'status'=>'ok', 'msg'=>$msg];
         }
 
-    public static function exception($msg){
-        return ['status'=>'exception', 'msg'=>$msg];
+    public static function exception($type, $msg){
+        return ['type'=>$type,'status'=>'exception', 'msg'=>$msg];
     }
 } 
