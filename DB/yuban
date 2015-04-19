@@ -1,0 +1,49 @@
+USE YUBAN;
+
+CREATE TABLE IF NOT EXISTS student (
+  id           INT AUTO_INCREMENT NOT NULL,
+  german_name  VARCHAR(255),
+  chinese_name VARCHAR(255),
+  sex          VARCHAR(50)        NOT NULL,
+  leaving_date DATETIME,
+  description  TEXT               NOT NULL,
+  PRIMARY KEY (id)
+)
+  ENGINE =InnoDB;
+
+
+CREATE TABLE IF NOT EXISTS available_languages (
+  id       INT AUTO_INCREMENT NOT NULL,
+  language VARCHAR(50),
+  PRIMARY KEY (id)
+)
+  ENGINE =InnoDB;
+
+
+CREATE TABLE IF NOT EXISTS best_languages (
+  student_id  INT NOT NULL,
+  language_id INT NOT NULL,
+  FOREIGN KEY (student_id) REFERENCES student (id),
+  FOREIGN KEY (language_id) REFERENCES available_languages (id),
+  PRIMARY KEY (student_id, language_id)
+)
+  ENGINE =InnoDB;
+
+CREATE TABLE IF NOT EXISTS want_to_improve_languages (
+  student_id  INT NOT NULL,
+  language_id INT NOT NULL,
+  FOREIGN KEY (student_id) REFERENCES student (id),
+  FOREIGN KEY (language_id) REFERENCES available_languages (id),
+  PRIMARY KEY (student_id, language_id)
+)
+  ENGINE =InnoDB;
+
+
+CREATE TABLE IF NOT EXISTS student_has_those_studys (
+  student_id INT NOT NULL,
+  study   varchar (100) not null ,
+  FOREIGN KEY (student_id) REFERENCES student (id),
+  PRIMARY KEY (student_id, study)
+)
+  ENGINE =InnoDB;
+
