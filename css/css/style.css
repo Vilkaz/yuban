@@ -2,3 +2,28 @@
 .navbar-form-controll {
   width: 800px;
 }
+
+/* line 5, ../scss/style.scss */
+a {
+  color: #bd0926 !important;
+}
+
+/* line 9, ../scss/style.scss */
+#content .single-entry-header h1.entry-title {
+  color: #bd0926 !important;
+}
+
+/* line 13, ../scss/style.scss */
+input#submit:hover {
+  background-color: #bd0926 !important;
+}
+
+/* line 17, ../scss/style.scss */
+#content .page-entry-header h1.entry-title {
+  color: #bd0926 !important;
+}
+
+/* line 21, ../scss/style.scss */
+.searchsubmit:hover {
+  background-color: #bd0926 !important;
+}

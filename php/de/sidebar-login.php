@@ -46,6 +46,6 @@ sidebar login
 <script>
     document.onload = function(){
         alert("ASDASDASD");
-        initSidebar();
+        init();
     }
 </script>

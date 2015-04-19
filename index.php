@@ -1,3 +1,10 @@
+<?php
+namespace yuban;
+
+require_once 'autoloader\autoloader.php';
+?>
+
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
@@ -6,6 +13,9 @@
     <link rel="profile" href="http://gmpg.org/xfn/11"/>
     <link rel="stylesheet" type="text/css" media="screen"
           href="http://www.sinologie-goettingen.de/boas/wp-content/themes/yoko_oas/style.css"/>
+
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="css/css/style.css"/>
     <link rel="pingback" href="http://www.sinologie-goettingen.de/boas/xmlrpc.php?lang=en"/>
 
     <script type='text/javascript' src='js/jquery-2.1.1.min.js'></script>
@@ -13,35 +23,10 @@
 
 
     <!--[if lt IE 9]>
-
-
     <script src="http://www.sinologie-goettingen.de/boas/wp-content/themes/yoko/js/html5.js"
             type="text/javascript"></script>
     <![endif]-->
 
-
-    <style type="text/css">
-        a {
-            color: #bd0926 !important;
-        }
-
-        #content .single-entry-header h1.entry-title {
-            color: #bd0926 !important;
-        }
-
-        input#submit:hover {
-            background-color: #bd0926 !important;
-        }
-
-        #content .page-entry-header h1.entry-title {
-            color: #bd0926 !important;
-        }
-
-        .searchsubmit:hover {
-            background-color: #bd0926 !important;
-        }
-    </style>
-    <!--     VK  Header -->
 
 
 </head>
@@ -111,14 +96,6 @@
     </div>
     <!-- end header -->
 
-    <?php
-    require 'php/de/Kodas.php';
-
-  Kodas::uzkoduok('我能吞下玻璃而不傷身體');
-
-  //Kodas::uzkoduok('abcàêß€abc@');
-    ?>
-
     <!-- end wrap -->
 
     <footer id="colophon" class="clearfix">
@@ -148,10 +125,9 @@
 </body>
 
 <script>
-    document.onload = function(){
-        alert("ASDASDASD");
-        initSidebar();
-        $('#content').load('php/de/home.php');
+    window.onload = function(){
+        init();
+        //$('#content').load('php/de/home.php');
     }
 
 

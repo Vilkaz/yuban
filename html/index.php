@@ -129,8 +129,7 @@
         src='http://www.sinologie-goettingen.de/boas/wp-content/plugins/wp-super-faq/wp_super_faq.js?ver=3.4.1'></script>
 <script>
     document.onload = function(){
-        alert("ASDASDASD");
-        initSidebar();
+        init();
     }
 </script>
 </body>

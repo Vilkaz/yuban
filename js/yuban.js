@@ -3,9 +3,8 @@
  */
 //region Sidebar
 
-function initSidebar(){
-    console.log("zugewiesen");
-    $('#createNewUser').onclick(
+function init(){
+    $('#createNewUser').click(
         alert("ASD")
     )
 }
