@@ -1,8 +1,21 @@
 <?php
 namespace yuban;
+use classes\basicDOMClases\Img;
+use classes\Header;
 
 require_once 'autoloader\autoloader.php';
+require_once 'initSession.php';
+
+$test=new Img('img\1.png','headerIMG,','test Alt', 250,802);
+
+echo($test->getImg());
+var_dump($test);
+
+
+$test->render();
 ?>
+
+
 
 
 <!DOCTYPE html>
@@ -32,6 +45,9 @@ require_once 'autoloader\autoloader.php';
 </head>
 
 <body class="home page page-id-2 page-template page-template-boascat-php">
+
+
+
 
 <div id="fb-root">
 
@@ -70,6 +86,10 @@ require_once 'autoloader\autoloader.php';
             </div>
         </nav>
         <!-- end mainnav -->
+        <?php
+        Header::render();
+        ?>
+
         <hgroup id="site-title">
             <h1><a href="#" title="YUBAN">YUBAN</a></h1>
 
@@ -125,6 +145,7 @@ require_once 'autoloader\autoloader.php';
 </body>
 
 <script>
+    sixColumnEncryption('Attack at noon or we are done for');
     window.onload = function(){
         init();
         //$('#content').load('php/de/home.php');

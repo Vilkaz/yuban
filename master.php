@@ -8,6 +8,8 @@ namespace yuban;
  * Time: 11:02
  */
 
+require_once 'initSession.php';
+
 use classes\Status;
 use Exception;
 use logwriter\LogWriter;
@@ -42,6 +44,5 @@ function getSessionParameter($param){
 switch ($_POST['get']) {
     case 'auth':
         print json_encode(getAuth());
-        break;
         break;
 }

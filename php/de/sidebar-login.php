@@ -43,9 +43,3 @@ sidebar login
     </aside>
 
 </div>
-<script>
-    document.onload = function(){
-        alert("ASDASDASD");
-        init();
-    }
-</script>

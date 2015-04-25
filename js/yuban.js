@@ -8,9 +8,9 @@ function readMaster(string) {
     console.log(data);
     switch (data.type) {
         case ('auth'):
-            switch (data.status){
+            switch (data.status) {
                 case ('ok'):
-                    switch (data.msg){
+                    switch (data.msg) {
                         case('true'):
                             logedId();
                             break;
@@ -18,46 +18,46 @@ function readMaster(string) {
                             initNotLogedIn();
                             break;
                     }
+
             }
-
-
-
     }
 }
 
 function askMaster(msg) {
     $.post('master.php', msg, function (data) {
         readMaster(data);
-
     })
 }
 
 
 //region Sidebar
 
-function works(){
+function works() {
     alert('works');
 }
 
 
 function init() {
     askMaster({get: 'auth'});
+    askMaster({get: 'language'});
 }
 
-function initNotLogedIn(){
-    loadIntocontent('content', 'php/de/home.php');
+function initNotLogedIn() {
+    loadIntocontent('content', 'content/php/de/home.php');
     loadIntocontent('sidebar', 'php/de/sidebar-login.php');
-    $('#createNewUser').on('click','works()');
-
+    $('#createNewUser').bind('click', function () {
+        works();
+    });
 }
 
-function  logedId(){
+function logedId() {
     loadIntocontent('content', 'php/de/home.php');
     loadIntocontent('sidebar', 'php/de/sidebar.php')
 };
 
 
-function loadIntocontent(div,file){
-    $('#'+div).load(file);
+function loadIntocontent(div, file) {
+    $('#' + div).load(file);
 }
 //endregion sidebar
+
