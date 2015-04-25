@@ -1,18 +1,20 @@
 <?php
 namespace yuban;
+
+use classes\basicDOMClases\A;
+use classes\basicDOMClases\Ul;
 use classes\basicDOMClases\Img;
 use classes\Header;
 
 require_once 'autoloader\autoloader.php';
 require_once 'initSession.php';
 
-$test=new Img('img\1.png','headerIMG,','test Alt', 250,802);
+$ulist= new Ul(['id'=>'new id', 'class'=>'ulclass'], [
+    new A('test', 'test2'),
+    new A('test', 'test3')]);
 
-echo($test->getImg());
-var_dump($test);
+$ulist->render();
 
-
-$test->render();
 ?>
 
 

@@ -34,23 +34,23 @@ class Img
         $this->setHeight($height);
     }
 
-    function getImg()
+    function toHTML()
     {
-        $id = $this->nullOrValue('id');
+        $id = $this->HTMLValue('id');
         $url = $this->getUrl();
-        $height = $this->nullOrValue('height');
-        $width = $this->nullOrValue('width');
-        $alt = $this->nullOrValue('alt');
+        $height = $this->HTMLValue('height');
+        $width = $this->HTMLValue('width');
+        $alt = $this->HTMLValue('alt');
         return '<img ' . $id . ' src=' . $url . ' ' . $alt . $width . $height . '>';
     }
 
 
     function render(){
-        echo($this->getImg());
+        echo($this->toHTML());
     }
 
 
-    function nullOrValue($param)
+    function HTMLValue($param)
     {
         switch ($param) {
             case('id'):
