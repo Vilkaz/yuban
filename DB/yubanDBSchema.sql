@@ -49,3 +49,30 @@ CREATE TABLE IF NOT EXISTS student_has_those_study (
 )
   ENGINE =InnoDB;
 
+
+
+
+CREATE TABLE IF NOT EXISTS article (
+  id         INT AUTO_INCREMENT NOT NULL,
+  title      VARCHAR(1024)      NOT NULL,
+  text       MEDIUMTEXT         NOT NULL,
+  autor_name VARCHAR(255)       NOT NULL,
+  createDate DATE               NOT NULL,
+  autor_id   INT                NOT NULL,
+  FOREIGN KEY (autor_id) REFERENCES student (id),
+  PRIMARY KEY (id)
+)
+  ENGINE =InnoDB;
+
+CREATE TABLE IF NOT EXISTS header (
+  id           INT AUTO_INCREMENT NOT NULL,
+  yuban        VARCHAR(50)        NOT NULL,
+  in_goetingen VARCHAR(100)       NOT NULL,
+  home         VARCHAR(25)        NOT NULL,
+  profile       VARCHAR(25)        NOT NULL,
+  other        VARCHAR(25)        NOT NULL,
+  language     VARCHAR(3)         NOT NULL,
+  PRIMARY KEY (id)
+)
+  ENGINE =InnoDB;
+

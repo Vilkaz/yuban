@@ -81,7 +81,6 @@ class Img
 
     function getStyle()
     {
-
         if (strlen($height . $width) == 0) {
             return '';
         }

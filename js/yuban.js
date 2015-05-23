@@ -1,63 +1,28 @@
+
 /**
  * Created by Vilkaz on 01.11.2014.
  */
 
-
-function readMaster(string) {
-    var data = JSON.parse(string);
-    console.log(data);
-    switch (data.type) {
-        case ('auth'):
-            switch (data.status) {
-                case ('ok'):
-                    switch (data.msg) {
-                        case('true'):
-                            logedId();
-                            break;
-                        case('false'):
-                            initNotLogedIn();
-                            break;
-                    }
-
-            }
-    }
+function getSite() {
+    return $('#page').attr('data-site');
 }
 
-function askMaster(msg) {
-    $.post('master.php', msg, function (data) {
-        readMaster(data);
+function initFlags() {
+    $('#gerFlag').click(function(){
+        gerFlag();
     })
 }
 
-
-//region Sidebar
-
-function works() {
-    alert('works');
+function gerFlag() {
+    alert("GER FLAG CKLICED");
+    $.post('master.php', {
+            action: 'flag',
+            lang:'ger',
+            site:getSite()
+        },
+        function (data) {
+            data = JSON.parse(data);
+            console.log(data);
+            $('#pageHead').html(data);
+        })
 }
-
-
-function init() {
-    askMaster({get: 'auth'});
-    askMaster({get: 'language'});
-}
-
-function initNotLogedIn() {
-    loadIntocontent('content', 'content/php/de/home.php');
-    loadIntocontent('sidebar', 'php/de/sidebar-login.php');
-    $('#createNewUser').bind('click', function () {
-        works();
-    });
-}
-
-function logedId() {
-    loadIntocontent('content', 'php/de/home.php');
-    loadIntocontent('sidebar', 'php/de/sidebar.php')
-};
-
-
-function loadIntocontent(div, file) {
-    $('#' + div).load(file);
-}
-//endregion sidebar
-

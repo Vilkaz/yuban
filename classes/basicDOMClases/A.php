@@ -9,35 +9,46 @@
 namespace classes\basicDOMClases;
 
 
-class A
+class A extends DOMElement
 {
 
     private $href;
     private $text;
 
     /**
+     * @param string $id
+     * @param string $class
      * @param string $href
      * @param string $text
+
      */
-    function __construct($href='#', $text=''){
+    function __construct($id, $class,$href = '#', $text = '')
+    {
+        $this->setId($id);
+        $this->setClass($class);
         $this->setHref($href);
         $this->setText($text);
     }
 
 
-    function toHTML(){
-        return '<a '.$this->HTMLValue('href').'>'.$this->getText().'</a>';
+    function toHTML()
+    {
+        return '<a '.
+        $this->getIDAndClass().
+        $this->HTMLValue('href') . '>' . $this->getText() . '</a>';
     }
 
-    function render(){
-        echo ($this->toHTML());
+    function render()
+    {
+        echo($this->toHTML());
     }
 
 
-    function HTMLValue($param){
-        switch($param){
+    function HTMLValue($param)
+    {
+        switch ($param) {
             case('href'):
-              return 'href="'.$this->getHref().'" ';
+                return 'href="' . $this->getHref() . '" ';
         }
     }
 

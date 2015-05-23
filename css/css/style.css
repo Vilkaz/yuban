@@ -27,3 +27,14 @@ input#submit:hover {
 .searchsubmit:hover {
   background-color: #bd0926 !important;
 }
+
+/* line 25, ../scss/style.scss */
+.autorLine {
+  font-style: italic;
+  font-size: 12;
+}
+
+/* line 30, ../scss/style.scss */
+#languageBar {
+  float: right;
+}

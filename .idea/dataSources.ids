@@ -2117,6 +2117,16 @@
       <column name="pass" sqlType="CHAR" precision="32" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
       <primary-key name="PRIMARY" columns="name"/>
     </table>
+    <table name="article" schema="" catalog="yuban" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="title" sqlType="VARCHAR" precision="1024" scale="0" nullable="false" jdbcType="12"/>
+      <column name="text" sqlType="MEDIUMTEXT" precision="16777215" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="autor_name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="createDate" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="autor_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="article_ibfk_1" columns="autor_id" ref-table="student" ref-schema="" ref-catalog="yuban" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
     <table name="available_languages" schema="" catalog="yuban" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="language" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
@@ -2131,6 +2141,16 @@
       <foreign-key name="best_languages_ibfk_1" columns="student_id" ref-table="student" ref-schema="" ref-catalog="yuban" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="best_languages_ibfk_2" columns="language_id" ref-table="available_languages" ref-schema="" ref-catalog="yuban" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
+    <table name="header" schema="" catalog="yuban" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="yuban" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="in_goetingen" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="home" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12"/>
+      <column name="profile" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12"/>
+      <column name="other" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12"/>
+      <column name="language" sqlType="VARCHAR" precision="3" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
     <table name="student" schema="" catalog="yuban" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="german_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
@@ -2140,6 +2160,7 @@
       <column name="description" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
       <column name="auth" sqlType="VARCHAR" precision="127" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="article_ibfk_1" table="article" schema="" catalog="yuban" columns="autor_id"/>
       <exported-key name="best_languages_ibfk_1" table="best_languages" schema="" catalog="yuban" columns="student_id"/>
       <exported-key name="student_has_those_study_ibfk_1" table="student_has_those_study" schema="" catalog="yuban" columns="student_id"/>
       <exported-key name="want_to_improve_languages_ibfk_1" table="want_to_improve_languages" schema="" catalog="yuban" columns="student_id"/>

@@ -1,4 +1,5 @@
 <?php
+namespace  DB;
 
 /**
  * Created by IntelliJ IDEA.

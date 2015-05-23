@@ -42,12 +42,11 @@ class Ul {
     }
 
     function getParam(){
-        $string='';
+        $string=' ';
         foreach ($this->getParameters() as $key => $value) {
             $string.=$key.'="'.$value.'"';
         }
         return $string;
-
     }
 
 

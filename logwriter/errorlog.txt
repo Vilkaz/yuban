@@ -1,0 +1,221 @@
+
+____________________________________________________________________________________________________
+ Could not load this class :yuban/H.php
+Date      =26.04.2015 11:04:09
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\H')
+#1 C:\xampp\htdocs\yuban\index.php(24): spl_autoload_call('yuban\\H')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :classes/Header.php
+Date      =26.04.2015 11:04:33
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('classes\\Header')
+#1 C:\xampp\htdocs\yuban\index.php(33): spl_autoload_call('classes\\Header')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Master.php
+Date      =27.04.2015 10:04:35
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Master')
+#1 C:\xampp\htdocs\yuban\index.php(119): spl_autoload_call('yuban\\Master')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:29
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:32
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:33
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:56
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:00
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:05
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:04
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:07
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:07
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:07
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:07
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:08
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:10
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:10
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:10
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:10
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
+____________________________________________________________________________________________________
+ Could not load this class :yuban/Get.php
+Date      =28.04.2015 10:04:11
+Message   =class Not found
+Code      =0
+File      =C:\xampp\htdocs\yuban\autoloader\autoloader.php
+Line      =18
+Trace
+#0 [internal function]: autoloader('yuban\\Get')
+#1 C:\xampp\htdocs\yuban\index.php(55): spl_autoload_call('yuban\\Get')
+#2 {main}
