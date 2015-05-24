@@ -26,5 +26,6 @@ class LoginSideBar extends DOMElement{
 
     function __construct(){
 
+
     }
 } 

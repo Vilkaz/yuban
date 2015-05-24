@@ -42,7 +42,6 @@ function flagRequest()
 {
     setLangIfNotEqual();
     return pageFactory()->toArray();
-
 }
 
 function pageFactory(){

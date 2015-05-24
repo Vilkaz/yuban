@@ -12,9 +12,6 @@ use DB\Get;
 
 require_once 'autoloader\autoloader.php';
 require_once 'initSession.php';
-
-
-
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">

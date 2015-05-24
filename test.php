@@ -4,6 +4,7 @@ namespace yuban;
 use classes\basicDOMClases\A;
 use classes\basicDOMClases\H;
 use classes\basicDOMClases\HWithA;
+use classes\basicDOMClases\Input;
 use classes\basicDOMClases\Nav;
 use classes\basicDOMClases\Ul;
 use classes\basicDOMClases\Img;
@@ -17,5 +18,10 @@ require_once 'initSession.php';
 echo"test";
 
 
-var_dump(Get::Header()->getNav()->getUl());
+$test= new Input('myid','myclass', 'text', 'myInputTest', ['data-test'=>'asdasd', 'data-second'=>'234']);
+var_dump($test);
+
+$test->toHTML();
+
+$test->render();
 

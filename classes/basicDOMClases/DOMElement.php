@@ -42,6 +42,15 @@ abstract class DOMElement {
 
     }
 
+    function getCustomParametersString(){
+        $customString="";
+        foreach ($this->getCustomParameters() as $index=>$value) {
+            $customString.= $index.'='.$value.' ';
+        }
+        return $customString;
+
+    }
+
     function render(){
         echo($this->toHTML());
     }

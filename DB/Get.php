@@ -25,14 +25,14 @@ class Get extends DOMElement
 {
     public static function Header()
     {
-        $link1 = new A(null,null,'index.php?site=home', 'Home');
-        $link2 = new A(null,null,'index.php?site=profile', 'Profil');
-        $link3 = new A(null,null,'index.php?site=sonstiges', 'Sonstiges');
+        $link1 = new A(null, null, 'index.php?site=home', 'Home');
+        $link2 = new A(null, null, 'index.php?site=profile', 'Profil');
+        $link3 = new A(null, null, 'index.php?site=sonstiges', 'Sonstiges');
         $ul = new Ul(['something' => 'beter'], [$link1, $link2, $link3]);
         $nav = new Nav('mainnav', 'clearfix', $ul);
         $img = new Img('img/1.png', 'headerimage wp-post-image', 'header', 350, 1102);
         $hinGoettingen = new H(2, 'in G&ouml;ttingen', 'site-description');
-        $aYouban = new A(null,null,'#', 'YUBAN');
+        $aYouban = new A(null, null, '#', 'YUBAN');
         $hYouban = new HWithA(1, '', $aYouban);
         $ger = new AWithImg('gerFlag', 'langFlags', '#', '',
             new Img('img/de.jpg', null, null, 10, 15));
